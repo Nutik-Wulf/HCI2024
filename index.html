@@ -5,13 +5,14 @@
         <title>UCF Freshman Portal - Home</title>
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/homepage.css">
-        <!-- Blinker font -->
+        <!-- Blinker and Anton SC fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Homepage HTML goes here -->
+        <!-- Homepage HTML starts here -->
         <div class="navbar">
           <h1>UCF Freshman Portal</h1>
           <!-- Navbar elements go here -->
@@ -26,51 +27,39 @@
             <p>Need help getting started? Lost? We can help!</p>
             <p>Find more information about UCF by choosing an option below:</p>
         </div>
-        <style>
-        .resourcesTable {
-          width:90%;
-          margin:auto;
-          overflow:auto;
-          border: 3px outset black;
-          text-align:center
-        }
-        .resourcesTable div {
-          width:20%;
-          float:left;
-        }
-        .resourceItem {
-          width: 90%;
-          height: 100px;
-          object-fit: cover;
-          border: 2px outset black;
-}
-        </style>
       <!-- Ollie working on the resource table below -->
         <div class="resourcesTable">
-        <h2>Resources</h2>
-        <div style="background-color:red">
-          <a href="#"><h3>Resource</h3>
-          <img class="resourceItem" src="images/bird.jpg" alt="bird">
-          </a>
+          <h2 class="resources-header">Resources</h2>
+          <div class="resource-item black">
+            <a href="#">
+              <h3>Resource</h3>
+              <img class="resourceImage" src="images/bird.jpg" alt="bird">
+            </a>
+          </div>
+          <div class="resource-item gold">
+            <a href="#">
+              <h3>Elements</h3>
+              <img class="resourceImage" src="images/cat.jpeg" alt="cat">
+            </a>
+          </div>
+          <div class="resource-item white">
+            <a href="#">
+              <h3>Go</h3>
+              <img class="resourceImage" src="images/house.jpeg" alt="house">
+            </a>
+          </div>
+          <div class="resource-item gold">
+            <a href="#">
+              <h3>In</h3>
+              <img class="resourceImage" src="images/stairs.jpg" alt="stairs">
+            </a>
+          </div>
+          <div class="resource-item black">
+            <a href="#">
+              <h3>Here!</h3>
+              <img class="resourceImage" src="images/train.jpg" alt="train">
+            </a>
+          </div>
         </div>
-        <div style="background-color:orange">
-          <a href="#"><h3 href="#">Elements</h3>
-          <img class="resourceItem" src="images/cat.jpeg" alt="cat">
-          </a>
-        </div>
-        <div style="background-color:yellow">
-          <a href="#"><h3 href="#">Go</h3>
-          <img class="resourceItem" src="images/house.jpeg" alt="house">
-          </a>
-        </div>
-        <div style="background-color:lime">
-          <a href="#"><h3 href="#">In</h3>
-          <img class="resourceItem" src="images/stairs.jpg" alt="stairs">
-          </a>
-        </div>
-        <div style="background-color:cyan">
-          <a href="#"><h3 href="#">Here!</h3>
-          <img class="resourceItem" src="images/train.jpg" alt="train">
-          </a>
-        </div>
+    </body>
 </html>
