@@ -1,5 +1,6 @@
 /* Common styles that will be used across the entire website */
 body {
     /* Placeholder background */
-    background-color: antiquewhite;
+    background-color: white;
+    font-family: Blinker, Verdana, Tahoma, sans-serif;
 }
