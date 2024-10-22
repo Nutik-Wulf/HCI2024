@@ -1,0 +1,24 @@
+.mapsContainer {
+  display: flex;
+}
+
+.mapsLeft {
+	width: calc(30% - 10px);
+	margin: 10px;
+	float: left;
+	border: 2px outset black;
+}
+
+.mapsRight {
+  width: calc(70% - 60px);
+  margin: 10px;
+  padding: 10px;
+  float: right;
+	border: 2px outset black;
+}
+
+.mapItem {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
