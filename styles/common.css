@@ -1,9 +1,13 @@
 /* Common styles that will be used across the entire website */
 body {
-    background-color: white;
+    background-color: grey;
     font-family: Blinker, Verdana, Tahoma, sans-serif;
     color: rgb(22, 22, 22);
     margin: 0px;
+}
+
+#hours div {
+    margin-left: 10px;
 }
 
 h1 {
@@ -32,7 +36,7 @@ h1 {
     li {
         display: inline;
         padding: 5px 5%;
-        border: 1px solid black;
+        border: 2px outset black;
     }
 }
 
