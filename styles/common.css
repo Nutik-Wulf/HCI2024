@@ -46,3 +46,47 @@ h1 {
   object-fit: cover;
   float: left;
 }
+
+.menu {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    float: right;
+    display: none;
+}
+
+input[type='checkbox'], label {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    /* Mobile styles */
+    .menu {
+        display: inline;
+    }
+    nav label {
+        text-align: right;
+        display: block;
+        padding: 0.5em;
+        line-height: 1.6em;
+        align-self: center;
+    }
+    .navbar {
+        position: sticky;
+        top: 0;
+        padding: 20px;
+        margin-bottom: 20px;
+        ul {
+            display: none;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        li {
+            display: inline;
+            padding: 5px 5%;
+            border: 2px outset black;
+        }
+    }
+}
