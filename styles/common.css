@@ -47,23 +47,45 @@ h1 {
   float: left;
 }
 
-.menu {
+.hamburger {
     width: 75px;
     height: 75px;
     object-fit: cover;
     float: right;
     display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
-input[type='checkbox'], label {
-    display: none;
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(255, 202, 6);
+    color: black;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.show-menu {
+    transform: translateY(0);
 }
 
 @media only screen and (max-width: 992px) {
     /* Mobile styles */
-    .menu {
+    .hamburger {
         display: inline;
+        .close-icon {
+            display: none;
+        }
     }
+    
     nav label {
         text-align: right;
         display: block;
@@ -71,6 +93,7 @@ input[type='checkbox'], label {
         line-height: 1.6em;
         align-self: center;
     }
+    
     .navbar {
         position: sticky;
         top: 0;
